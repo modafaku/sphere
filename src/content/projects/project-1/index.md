@@ -1,6 +1,6 @@
 ---
 title: "Project One"
-summary: "Lorem ipsum dolor sit amet"
+summary: "ryhthms gonna getya"
 date: "Mar 18 2022"
 draft: false
 tags:

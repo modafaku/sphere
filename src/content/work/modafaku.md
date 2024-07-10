@@ -5,7 +5,7 @@ dateStart: "08/01/2023"
 dateEnd: "Now"
 ---
 
-Started docoumenting projects and thinking up designs for a unified theme across different mediums. 
+started docoumenting projects and thinking up designs for a unified theme across different mediums. 
 
 - Aadipisicing elit. Iure illo neque tempora, voluptatem est.
 - dolorem dignissimos nulla ratione.
