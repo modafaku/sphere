@@ -6,7 +6,7 @@ import solidJs from "@astrojs/solid-js";
 import spotlightjs from "@spotlightjs/astro";
 import icon from "astro-icon";
 
-//import cloudflare from "@astrojs/cloudflare";
+import cloudflare from "@astrojs/cloudflare";
 
 import astroGhostCMS from "@matthiesenxyz/astro-ghostcms";
 
