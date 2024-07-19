@@ -10,6 +10,7 @@ const settings = await getSettings();
 invariant(settings, 'Settings not found');
 const title = settings.title;
 const description = settings.description;
+const runtime = Astro.locals.runtime;
 ---
 
 <PageLayout content={{ title, description }} settings={settings}>
