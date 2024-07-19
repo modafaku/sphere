@@ -16,7 +16,7 @@ export default defineConfig({
     platformProxy: {
       enabled: true,  
   site: "https://modafaku.com",
-//  output: "server",
+  output: "server",
   integrations: [
     mdx(), 
     sitemap(), 
