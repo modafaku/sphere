@@ -6,14 +6,29 @@ import solidJs from "@astrojs/solid-js";
 import spotlightjs from "@spotlightjs/astro";
 import icon from "astro-icon";
 
-import cloudflare from "@astrojs/cloudflare";
+//import cloudflare from "@astrojs/cloudflare";
+
+import astroGhostCMS from "@matthiesenxyz/astro-ghostcms";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://modafaku.com",
-  integrations: [mdx(), sitemap(), solidJs(), tailwind({
+  integrations: [
+    mdx(), 
+    sitemap(), 
+    solidJs(), 
+    tailwind({
     applyBaseStyles: false
-  }), spotlightjs(), icon()],
-  output: "server",
-  adapter: cloudflare()
+    }), 
+    spotlightjs(), 
+    icon(), 
+    astroGhostCMS({
+      ghostURL: "https://ghost.modafaku.com",
+      ThemeProvider: {
+        disableThemeProvider: true,
+      }
+    })
+  ],
+  output: "server"
+  //  adapter: cloudflare()
 });
