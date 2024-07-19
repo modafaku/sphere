@@ -13,10 +13,16 @@ import astroGhostCMS from "@matthiesenxyz/astro-ghostcms";
 // https://astro.build/config
 export default defineConfig({
   adapter: cloudflare({
+    imageService: 'cloudflare',
     platformProxy: {
       enabled: true,  
   site: "https://modafaku.com",
   output: "server",
+  vite: {
+    ssr: {
+      external: ['node:buffer'],
+    },
+  },
   integrations: [
     mdx(), 
     sitemap(), 
