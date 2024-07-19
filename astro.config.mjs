@@ -5,24 +5,11 @@ import tailwind from "@astrojs/tailwind";
 import solidJs from "@astrojs/solid-js";
 import spotlightjs from "@spotlightjs/astro";
 import icon from "astro-icon";
-
-import cloudflare from "@astrojs/cloudflare";
-
 import astroGhostCMS from "@matthiesenxyz/astro-ghostcms";
 
 // https://astro.build/config
 export default defineConfig({
-  adapter: cloudflare({
-    imageService: 'cloudflare',
-    platformProxy: {
-      enabled: true,  
   site: "https://modafaku.com",
-  output: "server",
-  vite: {
-    ssr: {
-      external: ['node:buffer'],
-    },
-  },
   integrations: [
     mdx(), 
     sitemap(), 
@@ -40,5 +27,4 @@ export default defineConfig({
     })
   ],
 },
-})
-})
+)
