@@ -7,7 +7,7 @@
     "dev:network": "astro dev --host",
     "start": "astro dev",
     "build": "astro check && astro build",
-    "preview": "astro preview",
+    "preview": "wrangler pages dev ./dist",
     "preview:network": "astro dev --host",
     "astro": "astro",
     "lint": "eslint .",
@@ -39,3 +39,4 @@
     "@rollup/plugin-yaml": "^4.1.2"
   }
 }
+
